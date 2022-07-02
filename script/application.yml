@@ -26,6 +26,7 @@ spring:
     activate:
       on-profile: prod
 
+# H2 datasource
   datasource:
     driver-class-name: org.h2.Driver
     username: sa
@@ -33,6 +34,15 @@ spring:
     url: jdbc:h2:./data/hertzbeat;MODE=MYSQL
     hikari:
       max-lifetime: 120000
+
+# MYSQL datasource
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://192.168.124.4:3306/hertzbeat?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    hikari:
+#      max-lifetime: 120000
 
   jpa:
     hibernate:
