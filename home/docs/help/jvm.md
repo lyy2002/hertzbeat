@@ -68,6 +68,7 @@ sidebar_label: JVM虚拟机
 1. 应用启动时添加JVM参数 ⚠️注意可自定义暴露端口
 
 ```shell
+-Djava.rmi.server.hostname=192.168.16.237（如果是docker安全填写宿主机ip）
 -Dcom.sun.management.jmxremote.port=9999
 -Dcom.sun.management.jmxremote.ssl=false
 -Dcom.sun.management.jmxremote.authenticate=false 
